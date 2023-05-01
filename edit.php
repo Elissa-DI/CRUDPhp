@@ -1,4 +1,19 @@
+<?php
+  include "db_conn.php";
+  $id = $_GET['id'];
 
+  
+
+    $sql = "UPDATE `crud` SET `first_name`='$first_name',`last_name`='$last_name',`email`='$email',`gender`='$gender' WHERE id=$id";
+    $result = mysqli_query($conn, $sql);
+     if($result) {
+        header("Location: index.php?msg=Data updated successfully");
+     } else {
+        echo "Failed: " . mysqli_error($conn);
+     }
+     $conn->close();
+  }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
