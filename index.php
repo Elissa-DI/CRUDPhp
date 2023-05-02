@@ -25,6 +25,8 @@
         ?>
         <a href="add_new.php" class="btn btn-dark mb-3">Add new</a>
 
+        <a href="generate_pdf.php"> PDF </a>
+
         <table class="table table-hover text-center">
   <thead class="table-dark">
     <tr>
